@@ -34,8 +34,7 @@ int main()
             case '2':
                 std::cout << "Enter your desired username: ";
                 std::cin >> usr;
-                std::cout << "Enter your desired password (must be at least 8 characters long and"
-                 << "The password should look something like this: TestPassword123!" ): ";
+                std::cout << "Enter your desired password (the must be at least 8 characters long and the password should look something like this: TestPassword123!)";
                 std::cin >> passw;
 
                 if (passw.length() <= 8) {
