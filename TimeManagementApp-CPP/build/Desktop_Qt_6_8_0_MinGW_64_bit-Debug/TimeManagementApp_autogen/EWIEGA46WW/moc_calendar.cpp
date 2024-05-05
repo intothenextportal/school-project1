@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../calendar.h"
+#include "D:/Github/school-project1/TimeManagementApp-CPP/calendar.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>

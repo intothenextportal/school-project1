@@ -1,4 +1,4 @@
-C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TimeManagementApp_autogen/EWIEGA46WW/moc_notes.cpp: C:/Users/Unknown/Documents/Qt/TimeManagementApp/notes.h \
+C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TimeManagementApp_autogen/EWIEGA46WW/moc_notes.cpp: D:/Github/school-project1/TimeManagementApp-CPP/notes.h \
   C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TimeManagementApp_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \

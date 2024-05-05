@@ -28,13 +28,15 @@ private slots:
 
     void on_addBtn_clicked();
 
-    void on_budgetTrackerBtn_clicked();
-
     void on_todoBtn_clicked();
     void disableTodo();
     void enableTodo();
 
     void on_calendarBtn_clicked();
+
+    void on_addBudgetBtn_clicked();
+
+    void on_minusBudgetBtn_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -344,7 +344,7 @@ TimeManagementApp_BINARY_DIR:STATIC=C:/Users/Unknown/Documents/Qt/TimeManagement
 TimeManagementApp_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-TimeManagementApp_SOURCE_DIR:STATIC=C:/Users/Unknown/Documents/Qt/TimeManagementApp
+TimeManagementApp_SOURCE_DIR:STATIC=D:/Github/school-project1/TimeManagementApp-CPP
 
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
@@ -430,7 +430,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/Unknown/Documents/Qt/TimeManagementApp
+CMAKE_HOME_DIRECTORY:INTERNAL=D:/Github/school-project1/TimeManagementApp-CPP
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR

@@ -24,7 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         notes.h notes.cpp notes.ui
-        budgettracker.h budgettracker.cpp budgettracker.ui
+
         calendar.h calendar.cpp calendar.ui
 
 

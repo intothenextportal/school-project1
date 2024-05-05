@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Unknown/Documents/Qt/TimeManagementApp
+# Install script for directory: D:/Github/school-project1/TimeManagementApp-CPP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

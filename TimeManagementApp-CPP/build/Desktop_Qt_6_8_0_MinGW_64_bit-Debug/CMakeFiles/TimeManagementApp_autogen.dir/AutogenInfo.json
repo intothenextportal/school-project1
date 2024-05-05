@@ -2,11 +2,11 @@
 	"BUILD_DIR" : "C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TimeManagementApp_autogen",
 	"CMAKE_BINARY_DIR" : "C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
 	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Unknown/Documents/Qt/TimeManagementApp",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/Github/school-project1/TimeManagementApp-CPP",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/Unknown/Documents/Qt/TimeManagementApp/CMakeLists.txt",
+		"D:/Github/school-project1/TimeManagementApp-CPP/CMakeLists.txt",
 		"C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
 		"C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake",
@@ -289,31 +289,25 @@
 		"C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/Unknown/Documents/Qt/TimeManagementApp",
+	"CMAKE_SOURCE_DIR" : "D:/Github/school-project1/TimeManagementApp-CPP",
 	"DEP_FILE" : "C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TimeManagementApp_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "TimeManagementApp_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/Unknown/Documents/Qt/TimeManagementApp/budgettracker.h",
-			"MU",
-			"EWIEGA46WW/moc_budgettracker.cpp",
-			null
-		],
-		[
-			"C:/Users/Unknown/Documents/Qt/TimeManagementApp/calendar.h",
+			"D:/Github/school-project1/TimeManagementApp-CPP/calendar.h",
 			"MU",
 			"EWIEGA46WW/moc_calendar.cpp",
 			null
 		],
 		[
-			"C:/Users/Unknown/Documents/Qt/TimeManagementApp/mainwindow.h",
+			"D:/Github/school-project1/TimeManagementApp-CPP/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"C:/Users/Unknown/Documents/Qt/TimeManagementApp/notes.h",
+			"D:/Github/school-project1/TimeManagementApp-CPP/notes.h",
 			"MU",
 			"EWIEGA46WW/moc_notes.cpp",
 			null
@@ -391,27 +385,22 @@
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/Unknown/Documents/Qt/TimeManagementApp/budgettracker.cpp",
+			"D:/Github/school-project1/TimeManagementApp-CPP/calendar.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/Unknown/Documents/Qt/TimeManagementApp/calendar.cpp",
+			"D:/Github/school-project1/TimeManagementApp-CPP/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/Unknown/Documents/Qt/TimeManagementApp/main.cpp",
+			"D:/Github/school-project1/TimeManagementApp-CPP/mainwindow.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/Unknown/Documents/Qt/TimeManagementApp/mainwindow.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/Unknown/Documents/Qt/TimeManagementApp/notes.cpp",
+			"D:/Github/school-project1/TimeManagementApp-CPP/notes.cpp",
 			"MU",
 			null
 		]

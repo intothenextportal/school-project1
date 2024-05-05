@@ -34,10 +34,9 @@ public:
     QGridLayout *mainGridLayout;
     QWidget *layoutWidget;
     QGridLayout *gridLayout_4;
+    QPushButton *todoBtn;
     QPushButton *calendarBtn;
     QPushButton *notesBtn;
-    QPushButton *budgetTrackerBtn;
-    QPushButton *todoBtn;
     QWidget *layoutWidget1;
     QGridLayout *gridLayout_2;
     QLabel *label;
@@ -50,10 +49,19 @@ public:
     QPushButton *startBtn;
     QPushButton *pauseBtn;
     QPushButton *stopBtn;
-    QWidget *widget;
+    QWidget *layoutWidget2;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *addBtn;
     QLineEdit *leTodo;
+    QWidget *layoutWidget3;
+    QGridLayout *gridLayout_3;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *totalSpentLabel;
+    QLineEdit *leTotalSpent;
+    QLineEdit *leBudgetEntry;
+    QHBoxLayout *horizontalLayout_4;
+    QPushButton *addBudgetBtn;
+    QPushButton *minusBudgetBtn;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -94,14 +102,20 @@ public:
         mainGridLayout->setContentsMargins(0, 0, 0, 0);
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(10, 130, 241, 176));
+        layoutWidget->setGeometry(QRect(10, 110, 241, 131));
         gridLayout_4 = new QGridLayout(layoutWidget);
         gridLayout_4->setObjectName("gridLayout_4");
         gridLayout_4->setContentsMargins(0, 0, 0, 0);
-        calendarBtn = new QPushButton(layoutWidget);
-        calendarBtn->setObjectName("calendarBtn");
+        todoBtn = new QPushButton(layoutWidget);
+        todoBtn->setObjectName("todoBtn");
         QFont font1;
         font1.setPointSize(17);
+        todoBtn->setFont(font1);
+
+        gridLayout_4->addWidget(todoBtn, 2, 0, 1, 1);
+
+        calendarBtn = new QPushButton(layoutWidget);
+        calendarBtn->setObjectName("calendarBtn");
         calendarBtn->setFont(font1);
 
         gridLayout_4->addWidget(calendarBtn, 0, 0, 1, 1);
@@ -112,21 +126,9 @@ public:
 
         gridLayout_4->addWidget(notesBtn, 1, 0, 1, 1);
 
-        budgetTrackerBtn = new QPushButton(layoutWidget);
-        budgetTrackerBtn->setObjectName("budgetTrackerBtn");
-        budgetTrackerBtn->setFont(font1);
-
-        gridLayout_4->addWidget(budgetTrackerBtn, 2, 0, 1, 1);
-
-        todoBtn = new QPushButton(layoutWidget);
-        todoBtn->setObjectName("todoBtn");
-        todoBtn->setFont(font1);
-
-        gridLayout_4->addWidget(todoBtn, 3, 0, 1, 1);
-
         layoutWidget1 = new QWidget(centralwidget);
         layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(10, 350, 256, 179));
+        layoutWidget1->setGeometry(QRect(10, 270, 256, 179));
         gridLayout_2 = new QGridLayout(layoutWidget1);
         gridLayout_2->setObjectName("gridLayout_2");
         gridLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -196,21 +198,70 @@ public:
 
         gridLayout_2->addLayout(horizontalLayout, 3, 0, 1, 1);
 
-        widget = new QWidget(centralwidget);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(290, 540, 1021, 26));
-        horizontalLayout_2 = new QHBoxLayout(widget);
+        layoutWidget2 = new QWidget(centralwidget);
+        layoutWidget2->setObjectName("layoutWidget2");
+        layoutWidget2->setGeometry(QRect(290, 540, 1021, 26));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget2);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        addBtn = new QPushButton(widget);
+        addBtn = new QPushButton(layoutWidget2);
         addBtn->setObjectName("addBtn");
 
         horizontalLayout_2->addWidget(addBtn);
 
-        leTodo = new QLineEdit(widget);
+        leTodo = new QLineEdit(layoutWidget2);
         leTodo->setObjectName("leTodo");
 
         horizontalLayout_2->addWidget(leTodo);
+
+        layoutWidget3 = new QWidget(centralwidget);
+        layoutWidget3->setObjectName("layoutWidget3");
+        layoutWidget3->setGeometry(QRect(10, 470, 241, 95));
+        gridLayout_3 = new QGridLayout(layoutWidget3);
+        gridLayout_3->setObjectName("gridLayout_3");
+        gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        totalSpentLabel = new QLabel(layoutWidget3);
+        totalSpentLabel->setObjectName("totalSpentLabel");
+        totalSpentLabel->setFont(font4);
+
+        horizontalLayout_3->addWidget(totalSpentLabel);
+
+        leTotalSpent = new QLineEdit(layoutWidget3);
+        leTotalSpent->setObjectName("leTotalSpent");
+        leTotalSpent->setReadOnly(true);
+
+        horizontalLayout_3->addWidget(leTotalSpent);
+
+
+        gridLayout_3->addLayout(horizontalLayout_3, 0, 0, 1, 1);
+
+        leBudgetEntry = new QLineEdit(layoutWidget3);
+        leBudgetEntry->setObjectName("leBudgetEntry");
+        leBudgetEntry->setReadOnly(false);
+
+        gridLayout_3->addWidget(leBudgetEntry, 1, 0, 1, 1);
+
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName("horizontalLayout_4");
+        addBudgetBtn = new QPushButton(layoutWidget3);
+        addBudgetBtn->setObjectName("addBudgetBtn");
+        QFont font6;
+        font6.setPointSize(12);
+        font6.setBold(true);
+        addBudgetBtn->setFont(font6);
+
+        horizontalLayout_4->addWidget(addBudgetBtn);
+
+        minusBudgetBtn = new QPushButton(layoutWidget3);
+        minusBudgetBtn->setObjectName("minusBudgetBtn");
+        minusBudgetBtn->setFont(font6);
+
+        horizontalLayout_4->addWidget(minusBudgetBtn);
+
+
+        gridLayout_3->addLayout(horizontalLayout_4, 2, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -229,10 +280,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        todoBtn->setText(QCoreApplication::translate("MainWindow", "To-Do", nullptr));
         calendarBtn->setText(QCoreApplication::translate("MainWindow", "Calendar", nullptr));
         notesBtn->setText(QCoreApplication::translate("MainWindow", "Notes", nullptr));
-        budgetTrackerBtn->setText(QCoreApplication::translate("MainWindow", "Budget Tracer", nullptr));
-        todoBtn->setText(QCoreApplication::translate("MainWindow", "To-Do", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Timer", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Enter time", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "(in seconds)", nullptr));
@@ -240,6 +290,9 @@ public:
         pauseBtn->setText(QCoreApplication::translate("MainWindow", "Pause", nullptr));
         stopBtn->setText(QCoreApplication::translate("MainWindow", "Stop", nullptr));
         addBtn->setText(QCoreApplication::translate("MainWindow", "Add", nullptr));
+        totalSpentLabel->setText(QCoreApplication::translate("MainWindow", "Total spent", nullptr));
+        addBudgetBtn->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
+        minusBudgetBtn->setText(QCoreApplication::translate("MainWindow", "-", nullptr));
     } // retranslateUi
 
 };

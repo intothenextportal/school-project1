@@ -1,4 +1,4 @@
-C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TimeManagementApp_autogen/EWIEGA46WW/moc_budgettracker.cpp: C:/Users/Unknown/Documents/Qt/TimeManagementApp/budgettracker.h \
+C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TimeManagementApp_autogen/EWIEGA46WW/moc_budgettracker.cpp: D:/Github/school-project1/TimeManagementApp-CPP/budgettracker.h \
   C:/Users/Unknown/Documents/Qt/TimeManagementApp/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TimeManagementApp_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \

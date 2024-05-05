@@ -1,17 +1,21 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "./notes.h"
-#include "./budgettracker.h"
 #include "./Calendar.h"
 #include <QString>
 #include <QMessageBox>
 #include <QTimer>
 #include <QDateTime>
 #include <QCheckBox>
+#include <iostream>
+
+static double totalSpent = 0; // Declared as static to retain its value between function calls.
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+
 {
     ui->setupUi(this);
 
@@ -36,6 +40,7 @@ void MainWindow::enableTodo()
     ui->addBtn->setEnabled(true);
     ui->leTodo->setEnabled(true);
 }
+
 
 
 void MainWindow::on_startBtn_clicked()
@@ -139,38 +144,6 @@ void MainWindow::on_addBtn_clicked()
     ui->leTodo->clear();
 }
 
-void MainWindow::on_budgetTrackerBtn_clicked()
-{
-    disableTodo();
-    static bool budgetOpened = false; // Static variable to keep track of the state
-
-    if (budgetOpened) {
-        // If budget tracker is already opened, close the widget
-        // Find the widget in the layout and remove it
-        for (int i = 0; i < ui->mainGridLayout->count(); ++i) {
-            if (QWidget *widget = ui->mainGridLayout->itemAt(i)->widget()) {
-                if (widget->objectName() == "BudgetTrackerWidget") {
-                    ui->mainGridLayout->removeWidget(widget);
-                    widget->deleteLater(); // Delete the widget
-                    break;
-                }
-            }
-        }
-        // Set budgetOpened to false to indicate that budget tracker is now closed
-        budgetOpened = false;
-    } else {
-        // If budget tracker is not already opened, create and add the Budget Tracker widget
-        BudgetTracker *budget = new BudgetTracker;
-        budget->setObjectName("BudgetTrackerWidget"); // Set object name for later identification
-        ui->mainGridLayout->addWidget(budget);
-
-        // Set budgetOpened to true to indicate that budget tracker is now opened
-        budgetOpened = true;
-    }
-}
-
-
-
 void MainWindow::on_todoBtn_clicked()
 {
     static bool todoEnabled = false; // Static variable to keep track of the state
@@ -218,5 +191,45 @@ void MainWindow::on_calendarBtn_clicked()
     }
 }
 
+
+
+
+
+void MainWindow::on_addBudgetBtn_clicked()
+{
+    QString priceStr = ui->leBudgetEntry->text();
+    bool ok;
+    int price = priceStr.toDouble(&ok);
+
+    if (!ok) {
+        // Handle invalid input
+        QMessageBox::warning(this, "Warning", "Invalid input for price"); return;
+    }
+
+    totalSpent += price;
+
+    QString totalSpentStr = QString::number(totalSpent);
+    ui->leTotalSpent->setText(totalSpentStr);
+    ui->leBudgetEntry->clear();
+}
+
+
+void MainWindow::on_minusBudgetBtn_clicked()
+{
+    QString priceStr = ui->leBudgetEntry->text();
+    bool ok;
+    double price = priceStr.toDouble(&ok);
+
+    if (!ok) {
+        // Handle invalid input
+        QMessageBox::warning(this, "Warning", "Invalid input for price");
+        return;
+    }
+    totalSpent -= price; // Subtract the entered value from the total spent amount
+
+    QString totalSpentStr = QString::number(totalSpent);
+    ui->leTotalSpent->setText(totalSpentStr);
+    ui->leBudgetEntry->clear();
+}
 
 

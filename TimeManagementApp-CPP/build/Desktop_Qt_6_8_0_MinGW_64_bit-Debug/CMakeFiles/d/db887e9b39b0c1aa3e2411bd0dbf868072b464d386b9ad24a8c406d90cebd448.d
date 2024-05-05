@@ -1,5 +1,4 @@
 TimeManagementApp_autogen/timestamp: \
-  C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
@@ -562,22 +561,19 @@ TimeManagementApp_autogen/timestamp: \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/CMakeLists.txt \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/budgettracker.cpp \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/budgettracker.h \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/budgettracker.ui \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   TimeManagementApp_autogen/moc_predefs.h \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/calendar.cpp \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/calendar.h \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/calendar.ui \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/main.cpp \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/mainwindow.cpp \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/mainwindow.h \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/mainwindow.ui \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/notes.cpp \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/notes.h \
-  C:/Users/Unknown/Documents/Qt/TimeManagementApp/notes.ui
+  D:/Github/school-project1/TimeManagementApp-CPP/CMakeLists.txt \
+  D:/Github/school-project1/TimeManagementApp-CPP/calendar.cpp \
+  D:/Github/school-project1/TimeManagementApp-CPP/calendar.h \
+  D:/Github/school-project1/TimeManagementApp-CPP/calendar.ui \
+  D:/Github/school-project1/TimeManagementApp-CPP/main.cpp \
+  D:/Github/school-project1/TimeManagementApp-CPP/mainwindow.cpp \
+  D:/Github/school-project1/TimeManagementApp-CPP/mainwindow.h \
+  D:/Github/school-project1/TimeManagementApp-CPP/mainwindow.ui \
+  D:/Github/school-project1/TimeManagementApp-CPP/notes.cpp \
+  D:/Github/school-project1/TimeManagementApp-CPP/notes.h \
+  D:/Github/school-project1/TimeManagementApp-CPP/notes.ui
