@@ -38,6 +38,8 @@ private slots:
 
     void on_minusBudgetBtn_clicked();
 
+    void on_quitBtn_clicked();
+
 private:
     Ui::MainWindow *ui;
     QTimer *timer = nullptr; // Declare the timer as a member variable

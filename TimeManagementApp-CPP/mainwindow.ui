@@ -258,6 +258,13 @@
      <item>
       <widget class="QLineEdit" name="leTodo"/>
      </item>
+     <item>
+      <widget class="QPushButton" name="quitBtn">
+       <property name="text">
+        <string>Quit</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">

@@ -127,7 +127,16 @@ void MainWindow::on_notesBtn_clicked()
         // Set notesOpened to true to indicate that notes are now opened
         notesOpened = true;
     }
+
+    // Toggle the button's color between red and the default
+    QString currentStyle = ui->notesBtn->styleSheet();
+    if (currentStyle.contains("background-color: red;")) {
+        ui->notesBtn->setStyleSheet(""); // Reset to default style
+    } else {
+        ui->notesBtn->setStyleSheet("background-color: red;");
+    }
 }
+
 
 void MainWindow::on_addBtn_clicked()
 {
@@ -157,7 +166,16 @@ void MainWindow::on_todoBtn_clicked()
         enableTodo(); // Assuming you have a function named enableTodo() to enable the todo widget
         todoEnabled = true;
     }
+
+    // Toggle the button's color between red and the default
+    QString currentStyle = ui->todoBtn->styleSheet();
+    if (currentStyle.contains("background-color: red;")) {
+        ui->todoBtn->setStyleSheet(""); // Reset to default style
+    } else {
+        ui->todoBtn->setStyleSheet("background-color: red;");
+    }
 }
+
 
 
 
@@ -189,7 +207,16 @@ void MainWindow::on_calendarBtn_clicked()
         // Set calendarOpened to true to indicate that calendar is now opened
         calendarOpened = true;
     }
+
+    // Toggle the button's color between red and the default
+    QString currentStyle = ui->calendarBtn->styleSheet();
+    if (currentStyle.contains("background-color: red;")) {
+        ui->calendarBtn->setStyleSheet(""); // Reset to default style
+    } else {
+        ui->calendarBtn->setStyleSheet("background-color: red;");
+    }
 }
+
 
 
 
@@ -230,6 +257,13 @@ void MainWindow::on_minusBudgetBtn_clicked()
     QString totalSpentStr = QString::number(totalSpent);
     ui->leTotalSpent->setText(totalSpentStr);
     ui->leBudgetEntry->clear();
+}
+
+
+
+void MainWindow::on_quitBtn_clicked()
+{
+    close(); // Close the main window, which will terminate the application
 }
 
 
